@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movea-shop</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-                <li><a href="./paginas/productos.html">Productos</a></li>
-                <li><a href="./paginas/ofertas.html">ofertas</a></li>
-
-            </ul>
-        </nav>
-
-
-    </header>
+      <div class="logo"><a href="#">Movea</a></div>
+    <nav class="navbar"> 
+         
+        <ul class="nav-list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+            <li><a href="./paginas/contacto.html">Contacto</a></li>
+            <li><a href="./paginas/productos.html">Productos</a></li>
+            <li><a href="./paginas/ofertas.html">Ofertas</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
         <h1>Movea ropa deportiva</h1>
-        <section>
+        <section class="product-container" >
+
             <h2>Te ofrecemos</h2>
 
-            <article>
+            <article class="product_card">
                 <h3>tops</h3>
                 <figure>
                     <img src="./img/img/top-marron.png" alt="tops">
@@ -37,7 +38,7 @@
 
             </article>
 
-            <article>
+            <article class="product_card">
             <h3>shorts</h3>
             <figure>
                 <img src="./img/img/joggin-negro.png" alt="Joggins">
@@ -47,7 +48,7 @@
 
             </article>
 
-            <article>
+            <article class="product_card">
                 <h3>Buzos deportivos</h3>
                 <figure>
                     <img src="./img/img/Buzo-blanco.png" alt="Buzos">
@@ -63,14 +64,19 @@
 
 
     <footer>
-        <p> Todos los derechos reservados</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43648.563503690886!2d-58.78806822297594!3d-34.47600898018888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc988e12661a07%3A0xa51def392da2533!2sB1667%20Tortuguitas%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1787884803425!5m2!1ses-419!2sar" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        <Section>  
-            <h2>Redes sociales</h2> 
+      
+        <div class="redes_map"> 
+           <div class="redes">
+             <h2>Redes sociales</h2> 
              <a href="https://www.facebook.com/"> <img src="./img/img/facebook.png" alt="facebook"> </a>
              <a href="https://www.instagram.com/"> <img src="./img/img/instagram.png" alt="instagram"> </a>
-        </Section>
-       
+           </div>
+             
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43648.563503690886!2d-58.78806822297594!3d-34.47600898018888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc988e12661a07%3A0xa51def392da2533!2sB1667%20Tortuguitas%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1787884803425!5m2!1ses-419!2sar" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>  
+        
+        </div>
+         <p> Todos los derechos reservados</p>
+        
     </footer>
 </body>
 </html>

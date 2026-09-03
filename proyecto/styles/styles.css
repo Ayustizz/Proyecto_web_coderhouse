@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,500;1,500&display=swap');
+/* font-family: "Rubik", sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dongle&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,500;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #311c1c;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    justify-content: space-between ;
+    padding: 0 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+    
+}
+
+
+.nav-list a {
+   color: white;
+   text-decoration: none;
+    
+}
+
+
+h1{
+    color: rgb(5, 5, 5);
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product-container h2, h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product_card{
+    width: 300px;
+    height: 100%;
+    background-color: rgb(182, 178, 178);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.product_card span{
+    font-family: 'Rubik', sans-serif;
+   
+}
+
+.product_card p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+
+.product_card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+
+}
+
+
+
+
+.texto-nosotros{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    margin: 3rem;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #311c1c;
+    font-family: 'Rubik', sans-serif;
+}
+
+.redes_map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer iframe {
+    width: 200px;
+    height: 150px;
+    border: 0;
+    display: block;
+}
+
+footer p {
+    color: rgb(73, 73, 73);
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    font-weight: 500;
+}
+
+
