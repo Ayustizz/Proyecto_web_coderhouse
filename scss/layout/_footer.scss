@@ -91,7 +91,7 @@ footer {
 
     &:active {
       color: $color-acento-activo;
-      transform: scale(0.92);
+      transform: translate(50px, 20px);
     }
 
     &:focus-visible {
