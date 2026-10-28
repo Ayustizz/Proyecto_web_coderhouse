@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dongle&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100..900;1,100..900&family=Roboto:wght@0,100..900&family=Rubik:ital,wght@0,500;1,500&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  color: $color-titulo;
+  text-align: center;
+}

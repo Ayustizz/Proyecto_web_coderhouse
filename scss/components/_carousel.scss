@@ -1,0 +1,51 @@
+@use "../utilities/variables" as *;
+
+.gallery-section {
+  display: grid;
+  gap: 14px;
+
+  > h2 {
+    color: $color-primario;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+.movea-carousel {
+  overflow: hidden;
+  border-radius: 12px;
+
+  .carousel-item img {
+    height: clamp(250px, 48vw, 600px);
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .carousel-caption {
+    right: 12%;
+    bottom: 5px;
+    left: 12%;
+    padding: 8px 8px;
+    border-radius: 8px;
+  }
+
+  button:focus-visible {
+    outline: 3px solid $color-primario;
+    outline-offset: -4px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: $color-primario-activo;
+    transition: opacity 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      transform: scaleY(1.5);
+    }
+
+    &:active {
+      transform: scaleY(1.8);
+    }
+  }
+}

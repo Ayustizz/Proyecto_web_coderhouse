@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: $color-texto;
+  font-family: "Poppins", sans-serif;
+}

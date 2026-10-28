@@ -1,0 +1,62 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.site-navbar {
+  .navbar-brand {
+    color: $color-fondo;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-acento;
+      transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+      @include focus-outline();
+    }
+  }
+
+  .nav-link {
+    border-radius: 6px;
+    color: $color-fondo;
+    transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus {
+      color: $color-fondo;
+      background-color: $color-primario-hover;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      color: $color-fondo;
+      background-color: $color-primario-activo;
+      transform: scale(0.97);
+    }
+
+    &:focus-visible {
+      @include focus-outline();
+    }
+  }
+
+  .navbar-toggler {
+    transition: background-color 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-primario-hover;
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+
+    &:focus-visible {
+      @include focus-outline();
+    }
+  }
+}

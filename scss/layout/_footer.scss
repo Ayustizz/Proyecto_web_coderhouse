@@ -1,1 +1,146 @@
-// Migracion manual pendiente.
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "redes"
+    "tienda"
+    "ayuda"
+    "mapa"
+    "linea"
+    "derechos";
+  gap: 20px;
+  justify-items: center;
+  width: 100%;
+  padding: 28px 16px 16px;
+  background-color: $color-primario;
+  color: $color-fondo;
+  font-family: "Rubik", sans-serif;
+
+  iframe {
+    grid-area: mapa;
+    width: min(100%, 360px);
+    border: 0;
+  }
+
+  .linea {
+    grid-area: linea;
+    width: 100%;
+    margin: 0;
+    background-color: $color-fondo;
+  }
+
+  p {
+    grid-area: derechos;
+    width: 100%;
+    color: $color-fondo;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  @media (min-width: 640px) {
+    grid-template-areas:
+      "redes tienda"
+      "ayuda mapa"
+      "linea linea"
+      "derechos derechos";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 32px 24px 20px;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-areas:
+      "redes tienda ayuda mapa"
+      "linea linea linea linea"
+      "derechos derechos derechos derechos";
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+    padding: 36px max(32px, calc((100% - 1200px) / 2)) 20px;
+  }
+}
+
+.redes_footer {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.link_redes {
+  display: flex;
+  gap: 20px;
+
+  .fa-facebook,
+  .fa-instagram {
+    color: $color-fondo;
+  }
+
+  a {
+    color: $color-fondo;
+    font-size: 24px;
+    transition: color 180ms ease, transform 180ms ease;
+
+    &:hover,
+    &:focus {
+      color: $color-acento;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      color: $color-acento-activo;
+      transform: scale(0.92);
+    }
+
+    &:focus-visible {
+      @include focus-outline(2px);
+    }
+  }
+}
+
+.tienda_links_footer {
+  grid-area: tienda;
+}
+
+.ayuda_link_footer {
+  grid-area: ayuda;
+}
+
+.tienda_links_footer,
+.ayuda_link_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.tienda_footer,
+.ayuda_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  text-align: center;
+
+  a {
+    color: $color-fondo;
+    text-decoration: none;
+    transition: color 180ms ease, text-decoration-color 180ms ease;
+
+    &:hover,
+    &:focus {
+      color: $color-acento;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $color-acento-activo;
+    }
+
+    &:focus-visible {
+      @include focus-outline(2px);
+    }
+  }
+}

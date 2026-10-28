@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+.movea-carousel {
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: background-color 180ms ease, opacity 180ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: $color-control-transparente;
+      opacity: 1;
+    }
+  }
+}

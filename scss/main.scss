@@ -1,15 +1,12 @@
-@use "utilities/variables";
-@use "utilities/extends";
-@use "utilities/mixins";
+@use "base/tipografia";
+@use "base/base";
 
+@use "layout/header";
+@use "layout/nav";
+@use "layout/main";
+@use "layout/footer";
 
-
-@use "base/reseteo";
-@use "base/generales";
-
- @use "layout/header";
- @use "layout/main";
- @use "layout/footer";
-
-@use "components/tarjetas";
-@use "components/botones";
+@use "components/carousel";
+@use "components/buttons";
+@use "components/cards";
+@use "components/sections";

@@ -1,9 +1,23 @@
 @use "../utilities/variables" as *;
-@use "../utilities/extends" as *;
-@use "../utilities/mixins" as *;
 
-.tienda_footer a:focus-visible,
-.ayuda_footer a:focus-visible,
-.link_redes a:focus-visible{
-    @extend %foco-footer;
+.site-header {
+  background-color: $color-primario;
+  font-family: "Rubik", sans-serif;
+}
+
+.site-navbar {
+  padding: 12px 16px;
+
+  @media (min-width: 640px) {
+    padding: 16px 24px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 18px 32px;
+  }
+}
+
+.site-navbar-inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
 }
