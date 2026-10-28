@@ -1,0 +1,18 @@
+.tienda_footer a:focus-visible,
+.ayuda_footer a:focus-visible,
+.link_redes a:focus-visible {
+  outline: 2px solid #e8c6b8;
+  outline-offset: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #1f1b1b;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
