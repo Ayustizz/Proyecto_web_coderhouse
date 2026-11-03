@@ -2,9 +2,10 @@
   "name": "proyecto",
   "version": "1.0.0",
   "description": "Proyecto MOVEA-SHOP",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "sass scss/main.scss styles/styles.css --no-source-map",
+    "watch:css": "sass --watch scss/main.scss styles/styles.css --no-source-map"
   },
   "repository": {
     "type": "git",
