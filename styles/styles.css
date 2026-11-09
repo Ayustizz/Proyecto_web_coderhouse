@@ -225,20 +225,19 @@ footer p {
   outline-offset: 3px;
 }
 
+.ayuda_link_footer, .tienda_links_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
 .tienda_links_footer {
   grid-area: tienda;
 }
 
 .ayuda_link_footer {
   grid-area: ayuda;
-}
-
-.tienda_links_footer,
-.ayuda_link_footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
 }
 
 .tienda_footer,
