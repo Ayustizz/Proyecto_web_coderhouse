@@ -23,3 +23,7 @@ En esta etapa trabajé para que la página se encuentre más fácil en Google:
 - Ahora todas las páginas tienen un solo título principal . A contacto y ofertas les faltaba, así que lo agregué. Después vienen los <h2>, y así sigue en orden sin saltear niveles.
 - En los títulos y textos usé palabras clave del rubro, como "ropa deportiva para mujeres", "buzos", "tops" y "joggers", pero tratando de que suene natural y sin repetirlas de más.
 - Les cambié el nombre a las imágenes para que todas estén en minúscula y con guiones.
+
+## link de Netlify
+
+**https://moveafitt.netlify.app**
